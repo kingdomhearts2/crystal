@@ -10,7 +10,7 @@ export default function Home() {
       <header className="text-center py-20 px-4">
         <h1 className="text-5xl font-bold tracking-wide">crystal</h1>
         <p className="text-zinc-400 mt-4 text-lg">
-          Mix & Mastering en ligne. Zéro compromis.
+          Mix, Mastering & Production.
         </p>
       </header>
 
@@ -22,7 +22,7 @@ export default function Home() {
               <h2 className="text-xl font-semibold">Mixage</h2>
             </div>
             <p className="text-zinc-400 text-sm">
-              Mise en valeur de chaque élément de votre morceau : voix, drums, 808, synthés. Équilibre, profondeur et clarté garantis.
+              Arrangement et traitement vocal de qualité professionnelle, sculpté avec des effets modernes pour un son actuel. Équilibre, profondeur et clarté garantis.
             </p>
           </CardContent>
         </Card>
@@ -63,13 +63,13 @@ export default function Home() {
         <h3 className="text-2xl font-bold mb-6">Tarifs</h3>
         <div className="grid gap-4 text-zinc-300">
           <div>
-            <strong>Mixage :</strong> à partir de 40€ par morceau
+            <strong>Mixage vocal et mastering au titre :</strong> à partir de 50€ par morceau
           </div>
           <div>
-            <strong>Mastering :</strong> à partir de 20€ par morceau
+            <strong>Mixage stems :</strong> à partir de 20€ par morceau
           </div>
           <div>
-            <strong>Pack Mix + Master :</strong> 55€ par morceau
+            <strong>Offre 3 titres mixage + mastering :</strong> à partir de 100€ (33€ par morceau)
           </div>
         </div>
       </section>
