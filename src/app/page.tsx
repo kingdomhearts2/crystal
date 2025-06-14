@@ -106,7 +106,7 @@ export default function Home() {
 
       <footer className="text-center text-zinc-600 text-sm py-6 space-y-2">
         <div>
-          © {new Date().getFullYear()} crystal – Mix & Mastering en ligne
+          © {new Date().getFullYear()} crystal – Mix, Mastering & Production
         </div>
         <a
           href="https://www.instagram.com/crystal.svn/"
