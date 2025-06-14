@@ -14,7 +14,6 @@ function CrystalStarsBackground() {
   const canvasRef = useRef(null);
   const stars = useRef([]);
 
-  // Init étoiles
   useEffect(() => {
     const count = 70;
     stars.current = Array.from({ length: count }, () => ({
@@ -28,12 +27,11 @@ function CrystalStarsBackground() {
     }));
   }, []);
 
-  // Animate
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     let running = true;
-    let dpr = window.devicePixelRatio || 1;
+    const dpr = window.devicePixelRatio || 1;
 
     const resize = () => {
       canvas.width = window.innerWidth * dpr;
@@ -49,9 +47,8 @@ function CrystalStarsBackground() {
       const ctx = canvas.getContext("2d");
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      for (let s of stars.current) {
-        // Twinkle
-        let twinkle = (Math.sin(Date.now() * s.speed + s.twinkle) + 1) * 0.5;
+      for (const s of stars.current) {
+        const twinkle = (Math.sin(Date.now() * s.speed + s.twinkle) + 1) * 0.5;
         ctx.globalAlpha = s.alpha * (0.6 + twinkle * 0.7);
 
         ctx.beginPath();
@@ -88,6 +85,7 @@ function CrystalStarsBackground() {
     />
   );
 }
+
 
 export default function Home() {
   return (
