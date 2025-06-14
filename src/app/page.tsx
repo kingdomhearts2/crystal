@@ -63,13 +63,13 @@ export default function Home() {
         <h3 className="text-2xl font-bold mb-6">Tarifs</h3>
         <div className="grid gap-4 text-zinc-300">
           <div>
-            <strong>Mixage vocal et mastering au titre :</strong> à partir de 50€ par morceau
+            <strong>Mixage vocal au titre :</strong> à partir de 50€ par morceau
           </div>
           <div>
-            <strong>Mixage stems :</strong> à partir de 20€ par morceau
+            <strong>Mastering au titre :</strong> à partir de 30€ par morceau
           </div>
           <div>
-            <strong>Offre 3 titres mixage + mastering :</strong> à partir de 100€ (33€ par morceau)
+            <strong>Mixage + mastering :</strong> à partir de 60€
           </div>
         </div>
       </section>
