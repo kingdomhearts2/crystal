@@ -12,7 +12,18 @@ import { motion } from "framer-motion";
 // Composant Particules Crystal en pur React/Canvas
 function CrystalStarsBackground() {
   const canvasRef = useRef(null);
-  const stars = useRef([]);
+  const stars = useRef<
+  {
+    x: number;
+    y: number;
+    r: number;
+    alpha: number;
+    speed: number;
+    twinkle: number;
+    color: string;
+  }[]
+>([]);
+
 
   useEffect(() => {
     const count = 70;
