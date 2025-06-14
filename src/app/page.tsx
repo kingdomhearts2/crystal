@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Volume2, Sparkles, Mail } from "lucide-react";
+import { Volume2, Sparkles, Mail, Instagram } from "lucide-react";
 
 export default function Home() {
   return (
@@ -12,6 +12,17 @@ export default function Home() {
         <p className="text-zinc-400 mt-4 text-lg">
           Mix, Mastering & Production.
         </p>
+        <div className="mt-6 flex justify-center">
+          <a
+            href="https://www.instagram.com/crystal.svn/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-pink-500 hover:underline"
+          >
+            <Instagram className="w-5 h-5" />
+            @crystal.svn
+          </a>
+        </div>
       </header>
 
       <section className="grid md:grid-cols-2 gap-8 px-6 md:px-20 py-10">
@@ -69,10 +80,10 @@ export default function Home() {
             <strong>Mixage + mastering au titre :</strong> à partir de 55€ par morceau
           </div>
           <div>
-			<strong>Mastering au titre :</strong> à partir de 30€ par morceau
+            <strong>Mastering au titre :</strong> à partir de 30€ par morceau
           </div>
-		  <div>
-			<strong>3 titres mix + master :</strong> à partir de 100€
+          <div>
+            <strong>3 titres mix + master :</strong> à partir de 100€
           </div>
         </div>
       </section>
@@ -93,8 +104,19 @@ export default function Home() {
         </form>
       </section>
 
-      <footer className="text-center text-zinc-600 text-sm py-6">
-        © {new Date().getFullYear()} crystal – Mix & Mastering en ligne
+      <footer className="text-center text-zinc-600 text-sm py-6 space-y-2">
+        <div>
+          © {new Date().getFullYear()} crystal – Mix & Mastering en ligne
+        </div>
+        <a
+          href="https://www.instagram.com/crystal.svn/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 text-pink-500 hover:underline"
+        >
+          <Instagram className="w-4 h-4" />
+          @crystal.svn
+        </a>
       </footer>
     </main>
   );
