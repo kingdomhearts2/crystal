@@ -74,7 +74,7 @@ export default function Pricing() {
       </section>
 
       <footer className="text-center text-zinc-600 text-sm mt-24 animate-fade-in-up delay-300">
-        © {new Date().getFullYear()} crystal – Mix & Mastering en ligne
+        © {new Date().getFullYear()} crystal.
       </footer>
     </main>
   );
