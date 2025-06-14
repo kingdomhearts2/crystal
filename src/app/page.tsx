@@ -22,7 +22,7 @@ export default function Home() {
               <h2 className="text-xl font-semibold">Mixage</h2>
             </div>
             <p className="text-zinc-400 text-sm">
-              Arrangement et traitement vocal de qualité professionnelle, sculpté avec des effets modernes pour un son actuel. Équilibre, profondeur et clarté garantis.
+              Arrangement et traitement vocal, sculpté avec des effets modernes pour un son actuel. Équilibre, profondeur et clarté garantis.
             </p>
           </CardContent>
         </Card>
