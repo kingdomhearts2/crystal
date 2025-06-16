@@ -95,7 +95,7 @@ function CrystalStarsBackground() {
 
 const tarifs = [
   {
-    title: "🎚️ Mixage vocal (à l'unité)",
+    title: "🎚️ Mixage vocal (au titre)",
     price: "40€",
     desc: "Édition, balance, spatialisation, FX modernes.",
     color: "from-pink-500 to-pink-400",

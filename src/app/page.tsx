@@ -215,6 +215,31 @@ export default function Home() {
         transition={{ duration: 0.7, delay: 0.3 }}
         className="w-full flex flex-col items-center px-4 md:px-10 py-14 z-10"
       >
+	  <motion.section
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.7, delay: 0.25 }}
+  className="w-full flex flex-col items-center px-4 md:px-10 py-14 z-10"
+>
+  <h3 className="text-2xl md:text-3xl font-bold mb-6 text-center">Beats à vendre</h3>
+  <div className="grid gap-4 text-zinc-300 text-center">
+    <div><strong>Beat au format WAV :</strong> 35€</div>
+  </div>
+  <div className="w-full max-w-4xl mt-8 mx-auto rounded-3xl overflow-hidden shadow-lg border border-zinc-800 bg-zinc-900/60 backdrop-blur-sm" style={{ borderRadius: 24 }}>
+    <iframe
+      src="https://untitled.stream/embed/v92HnucGdIg7"
+      width="100%"
+      height="344"
+      allowFullScreen
+      allow="picture-in-picture"
+      frameBorder="0"
+      loading="lazy"
+      className="block"
+    ></iframe>
+  </div>
+</motion.section>
+
         <h3 className="text-2xl md:text-3xl font-bold mb-4 text-center">Contact</h3>
         <form
           className="grid gap-5 max-w-lg w-full mx-auto"
